@@ -477,6 +477,33 @@ header.searching .search .autocompletes li {
   header ul.menu > li.menu-starter span:last-child {
     margin-bottom: 0;
   }
+  header .search-wrap {
+    padding: 0 20px 14px;
+    border-bottom: 1px solid var(--header-height);
+    box-sizing: border-box;
+    top: var(--header-height);
+  }
+  header .search {
+    max-width: 590px;
+  }
+  header .shadow {
+    display: none;
+  }
+  header .search .textfield {
+    border-radius: 10px;
+    background-color: #1D1D1D;
+  }
+  header .search .autocompletes {
+    top: 58px;
+    padding: 26px 0 20px;
+    background-color: transparent;
+  }
+  header .search .autocompletes ul li {
+    border-bottom: 1px solid var(--header-height);
+  }
+  header .search .autocompletes ul li:last-child {
+    background-color: none;
+  }
   header.menuing {
     background-color: var(--color-black);
   }
@@ -493,6 +520,10 @@ header.searching .search .autocompletes li {
   }
   header.menuing ul.menu > li.menu-starter span:last-child {
     transform:  translate(0, -3.5px) rotate(-45deg);
+  }
+  header.menuing .search-wrap {
+    visibility: visible;
+    opacity: 1;
   }
 }
 
